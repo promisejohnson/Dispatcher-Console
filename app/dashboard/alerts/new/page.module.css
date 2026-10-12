@@ -1,0 +1,2 @@
+.back { display: inline-block; font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+.back:hover { color: var(--text-primary); }

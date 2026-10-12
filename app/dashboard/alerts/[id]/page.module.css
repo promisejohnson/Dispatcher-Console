@@ -1,0 +1,24 @@
+.back { display: inline-block; font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+.back:hover { color: var(--text-primary); }
+
+.headerRow { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; gap: 16px; }
+.badgeRow { display: flex; gap: 8px; }
+
+.layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; align-items: start; }
+
+.mainCard { padding: 24px 26px; display: flex; flex-direction: column; }
+
+.label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 16px; }
+.label:first-child { margin-top: 0; }
+.value { font-size: 15px; margin: 4px 0 0; }
+.message { font-size: 14.5px; line-height: 1.7; margin: 6px 0 0; color: var(--text-primary); }
+
+.sideCard {
+  background: var(--panel); border: 1px solid var(--border-soft); border-radius: 12px;
+  padding: 20px 22px;
+}
+.sideTitle { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 14px; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}

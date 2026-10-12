@@ -1,26 +1,31 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-deep: #0A0F1C;
+  --panel: #111a2c;
+  --panel-alt: #0d1524;
+  --border: #20304a;
+  --border-soft: #182338;
+  --text-primary: #EBF0F8;
+  --text-muted: #7E8CAA;
+  --text-dim: #4E5C78;
+  --critical: #E5484D;
+  --high: #F5A623;
+  --medium: #4FA3F7;
+  --low: #34C77B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+* { box-sizing: border-box; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html, body { margin: 0; padding: 0; background: var(--bg-deep); color: var(--text-primary); }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.display { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.04em; }
+
+a { color: inherit; text-decoration: none; }
+
+button, input, select, textarea { font-family: inherit; }
+
+::selection { background: var(--medium); color: #08111f; }
+
+:focus-visible { outline: 2px solid var(--medium); outline-offset: 2px; }
